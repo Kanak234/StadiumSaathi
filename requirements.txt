@@ -1,3 +1,7 @@
 streamlit>=1.36
 pandas
 numpy
+
+# test_assistant.py imports pytest at module scope. It was undeclared, so a
+# clean `pip install -r requirements.txt` left the suite uncollectable.
+pytest>=8.0
